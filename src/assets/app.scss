@@ -1,0 +1,48 @@
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.navbar.navbar-default {
+  margin-bottom: 0;
+}
+
+.body {
+  height: calc(100% - 52px);
+}
+
+$pixel: 0;
+
+@mixin clearfix() {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@while $pixel < 50 {
+  .mg-l-#{$pixel} {
+    margin-left: #{$pixel}px !important;
+  }
+  .mg-t-#{$pixel} {
+    margin-top: #{pixel}px !important;
+  }
+  .mg-r-#{$pixel} {
+    margin-right: #{$pixel}px !important;
+  }
+  .mg-b-#{$pixel} {
+    margin-bottom: #{$pixel}px !important;
+  }
+  .mg-#{$pixel} {
+    margin: #{$pixel}px !important;
+  }
+  .pd-#{$pixel} {
+    padding: #{$pixel}px !important;
+  }
+  $pixel: $pixel + 5;
+}
+
+@import "pages/dashboard";

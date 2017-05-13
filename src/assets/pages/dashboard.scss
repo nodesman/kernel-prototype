@@ -1,0 +1,56 @@
+.dashboard {
+  height: 100%;
+  .leftpane {
+    float: left;
+    height: 100%;
+    width: 50%;
+    overflow: auto;
+  }
+  .rightpane {
+    border-left: 1px solid #e6e3e3;
+    width: 50%;
+    float: left;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .form-item {
+    float: left;
+  }
+
+  .form-content {
+    float: left;
+  }
+
+  .count {
+    width: 60px;
+    vertical-align: middle;
+    font-size: 10px;
+    display: inline-block;
+  }
+
+  .project {
+    display: block;
+    font-size: 10px;
+  }
+
+  .hours {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .item {
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    padding: 10px;
+    @include clearfix;
+
+    &:last-child {
+      border-bottom: 1px solid #ccc;
+    }
+  }
+
+  .unavailable {
+    background-color: #f6f6f6;
+  }
+}
